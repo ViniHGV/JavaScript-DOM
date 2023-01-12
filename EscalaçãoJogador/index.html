@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-DOM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="frm">
+      <h1>Exercício Escalação do Time com DOM</h1>
+      <hr>
+      <form id="escalar">
+        <div class="mb-3">
+          <h1>Escalar Jogador</h1>
+          <label for="posicao" class="form-label">Posição jogador</label>
+          <input type="text" class="form-control" id="posicao">
+        </div>
+        <div class="mb-3">
+          <label for="posicao" class="form-label">Nome jogador</label>
+          <input type="text" class="form-control" id="nome">
+        </div>
+        <div class="mb-3">
+          <label for="posicao" class="form-label">Número da camisa do jogador</label>
+          <input type="text" class="form-control" id="numero">
+        </div>
+        <div class="mb-3 form-check">
+          <button type="button" class="btn btn-success" onclick="adicionar()">Escalar Jogador</button> 
+        </div>
+      </form>
+      <hr>
+      <form>
+        <div class="mb-3">
+          <h1>Remover Jogador</h1>
+          <label for="posicao" class="form-label">Número da camisa do jogador</label>
+          <input type="text" class="form-control" id="posicao">
+        </div>
+          <div class="mb-3 form-check">
+            <button type="button" class="btn btn-danger" onclick="remover()">Remover Jogador</button> 
+          </div>
+        </form>
+      <span id="listaJogadores"></span>
+    </div>
+</body>
+</html>
