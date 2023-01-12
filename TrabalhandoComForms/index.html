@@ -11,7 +11,7 @@
 </head>
 <body>
   <div id="frm">
-      <h1>Enviando Valores do DOM para o JavaScript</h1>
+      <h1>Trabalhando com Forms</h1>
       <br>
       <hr>
       <form id="orderForm">
@@ -20,18 +20,15 @@
           <h1>Registre-se</h1>
           <br>
           <label for="name" class="form-label">Nome de Usuário</label>
-          <input type="text" class="form-control" id="name">
+          <input type="text" class="form-control" id="name" name="name">
           <br>
           <label for="email" class="form-label">E-mail</label>
-          <input type="email" class="form-control" id="email">
+          <input type="email" class="form-control" id="email" name="email">
           <br>
           <label for="password" class="form-label">Senha</label>
-          <input type="text" class="form-control" id="password">
+          <input type="text" class="form-control" id="password" name="password">
           <br>
-          <label for="confirm" class="form-label">Confirmar Senha</label>
-          <input type="text" class="form-control" id="confirm">
-          <br>
-          <button type="button" class="btn btn-success" id="registerButton">Registrar</button> 
+          <button class="btn btn-success" type="submit">Registrar</button> 
       </form>
     </div>
 </body>
