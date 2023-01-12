@@ -49,6 +49,11 @@ form.addEventListener('submit', function(ev){
     div2.appendChild(lbl2)
 
     const div3 = document.createElement('div')
+    const divbtn = document.createElement('div')
+    const btn = document.createElement('button')
+    btn.type = "button"
+    btn.className = "btn btn-danger"
+    btn.innerText = "Excluir essa Linha"
     div3.className = "form-check form-check-inline"
     const inputcheck3 = document.createElement('input')
     inputcheck3.className = "form-check-input"
@@ -62,7 +67,10 @@ form.addEventListener('submit', function(ev){
     div3.appendChild(document.createElement('br'))
     div3.appendChild(inputcheck3)
     div3.appendChild(lbl3)
+    div3.appendChild(document.createElement('br'))
+    divbtn.appendChild(document.createElement('br'))
+    divbtn.appendChild(btn)
 
 
-    form.append(ul, titleExp, div ,div2, div3)
+    form.append(ul, titleExp, div ,div2, div3, divbtn)
 })
