@@ -25,5 +25,13 @@ function addPlayer (){
     }
 }
 function removePlayer(){
-    const number = document.getElementById('numberRemove')
+    const number = document.getElementById('numberRemove').value
+    const playerToRemove = document.getElementById('player-' + number)
+
+    const confirmation = confirm ('Remover o jogador ' + playerToRemove.innerText + " ?")
+
+    if(confirmation){
+        document.getElementById('teamList').removeChild(playerToRemove)
+        document.getElementById('numberRemove').value = ''
+    }
 }
