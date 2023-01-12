@@ -12,7 +12,7 @@ function addPlayer (){
 
         //Criando um elemento
         const playerItem = document.createElement('li')
-        
+
         playerItem.id ='player-' + number
         playerItem.innerText = position + ": " + name + " (" + number +")"
 
@@ -25,5 +25,5 @@ function addPlayer (){
     }
 }
 function removePlayer(){
-
+    const number = document.getElementById('numberRemove')
 }
