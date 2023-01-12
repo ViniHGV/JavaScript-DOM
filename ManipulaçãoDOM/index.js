@@ -13,6 +13,7 @@ function addContact(){
     nameInput.name = 'fullname'
     nameLi.appendChild(nameInput)
     ul.appendChild(nameLi)
+    ul.appendChild((document.createElement('br')))
 
     const phoneLi = document.createElement('li')
     phoneLi.innerText = "Telefone: "
@@ -21,6 +22,7 @@ function addContact(){
     phoneInput.name = 'fullname'
     phoneLi.appendChild(phoneInput)
     ul.appendChild(phoneLi)
+    ul.appendChild((document.createElement('br')))
 
     const adressLi = document.createElement('li')
     adressLi.innerText = "Endereço: "
@@ -29,6 +31,7 @@ function addContact(){
     adressInput.name = 'fullname'
     adressLi.appendChild(adressInput)
     ul.appendChild(adressLi)
+    ul.appendChild((document.createElement('br')))
 
     contactSection.append(h3, ul)
 }
