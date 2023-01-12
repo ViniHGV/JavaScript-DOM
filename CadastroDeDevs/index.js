@@ -14,7 +14,55 @@ form.addEventListener('submit', function(ev){
     ul.appendChild(title)
     ul.appendChild(inputtec)
 
-    
+    const div = document.createElement('div')
+    div.className = "form-check form-check-inline"
+    const titleExp = document.createElement('div')
+    const title2 = document.createElement('p')
+    title2.innerText = "Tempo de Experiência"
+    const inputcheck = document.createElement('input')
+    inputcheck.className = "form-check-input"
+    inputcheck.type = "radio"
+    inputcheck.id = "inlineRadio1"
+    inputcheck.name = "inlineRadioOptions"
+    const lbl = document.createElement('label')
+    lbl.className = "form-check-label"
+    lbl.for = "inlineRadio1"
+    lbl.innerText="0-2 Anos"
+    div.appendChild(document.createElement('br'))
+    titleExp.appendChild(title2)
+    div.appendChild(inputcheck)
+    div.appendChild(lbl)
 
-    form.append(ul)
+    const div2 = document.createElement('div')
+    div2.className = "form-check form-check-inline"
+    const inputcheck2 = document.createElement('input')
+    inputcheck2.className = "form-check-input"
+    inputcheck2.type = "radio"
+    inputcheck2.id = "inlineRadio2"
+    inputcheck2.name = "inlineRadioOptions"
+    const lbl2 = document.createElement('label')
+    lbl2.className = "form-check-label"
+    lbl2.for = "inlineRadio2"
+    lbl2.innerText="3-4 Anos"
+    div2.appendChild(document.createElement('br'))
+    div2.appendChild(inputcheck2)
+    div2.appendChild(lbl2)
+
+    const div3 = document.createElement('div')
+    div3.className = "form-check form-check-inline"
+    const inputcheck3 = document.createElement('input')
+    inputcheck3.className = "form-check-input"
+    inputcheck3.type = "radio"
+    inputcheck3.id = "inlineRadio2"
+    inputcheck3.name = "inlineRadioOptions"
+    const lbl3 = document.createElement('label')
+    lbl3.className = "form-check-label"
+    lbl3.for = "inlineRadio2"
+    lbl3.innerText="5+ Anos"
+    div3.appendChild(document.createElement('br'))
+    div3.appendChild(inputcheck3)
+    div3.appendChild(lbl3)
+
+
+    form.append(ul, titleExp, div ,div2, div3)
 })
