@@ -16,33 +16,35 @@
       <form id="escalar">
         <div class="mb-3">
           <h1>Escalar Jogador</h1>
-          <label for="posicao" class="form-label">Posição jogador</label>
-          <input type="text" class="form-control" id="posicao">
+          <label for="position" class="form-label">Posição jogador</label>
+          <input type="text" class="form-control" id="position">
         </div>
         <div class="mb-3">
-          <label for="nome" class="form-label">Nome jogador</label>
-          <input type="text" class="form-control" id="nome">
+          <label for="name" class="form-label">Nome jogador</label>
+          <input type="text" class="form-control" id="name">
         </div>
         <div class="mb-3">
-          <label for="numero" class="form-label">Número da camisa do jogador</label>
-          <input type="text" class="form-control" id="numero">
+          <label for="number" class="form-label">Número da camisa do jogador</label>
+          <input type="text" class="form-control" id="number">
         </div>
         <div class="mb-3 form-check">
-          <button type="button" class="btn btn-success" onclick="adicionar()">Escalar Jogador</button> 
+          <button type="button" class="btn btn-success" onclick="addPlayer()">Escalar Jogador</button> 
         </div>
       </form>
       <hr>
       <form>
         <div class="mb-3">
           <h1>Remover Jogador</h1>
-          <label for="posicao" class="form-label">Número da camisa do jogador</label>
-          <input type="text" class="form-control" id="posicao">
+          <label for="numberRemove" class="form-label">Número da camisa do jogador</label>
+          <input type="text" class="form-control" id="numberRemove">
         </div>
           <div class="mb-3 form-check">
-            <button type="button" class="btn btn-danger" onclick="remover()">Remover Jogador</button> 
+            <button type="button" class="btn btn-danger" onclick="removePlayer()">Remover Jogador</button> 
           </div>
         </form>
-      <span id="listaJogadores"></span>
+        <hr>
+      <h2>Time</h2>
+      <ul id="teamList"></ul>
     </div>
 </body>
 </html>
