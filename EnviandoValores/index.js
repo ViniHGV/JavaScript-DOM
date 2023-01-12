@@ -3,5 +3,13 @@ function register(element){
     const password = element.children.password.value
     const confirm = element.children.confirm.value
 
-    console.log({name, password, confirm})
+    
+
+    if (password === confirm){
+        alert("Usúario " + name + (" Criado com sucesso !"))
+        console.log({name, password, confirm})
+    }else {
+        alert ("As senhas não conferem !\nTente novamente !")
+    }
+    
 }
