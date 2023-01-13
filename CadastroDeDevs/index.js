@@ -116,4 +116,3 @@ const btnX = console.getElementById('btnX')
 btnX.addEventListener('click', function(){
     alert("Clique")
 })
-
