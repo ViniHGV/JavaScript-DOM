@@ -1,6 +1,7 @@
 const form = document.getElementById('orderForm')
+const btnC = document.getElementById('btnC')
 
-form.addEventListener('submit', function(ev){
+btnC.addEventListener('click', function(ev){
     ev.preventDefault()
     const name = document.querySelector('input[name="name"]').value
 
@@ -8,6 +9,7 @@ form.addEventListener('submit', function(ev){
     const inputtec = document.createElement('input')
     inputtec.type = "text"
     inputtec.className = "form-control"
+    inputtec.id = "inputtec"
     ul.appendChild(document.createElement('br'))
     const title = document.createElement('p')
     title.innerText = "Tecnologia: "
@@ -65,6 +67,7 @@ form.addEventListener('submit', function(ev){
     btn.type = "button"
     btn.className = "btn btn-danger"
     btn.innerText = "Excluir essa Linha"
+    btn.id = "btnX"
 
     const btnS = document.createElement('button')
     btnS.type = "button"
@@ -90,7 +93,6 @@ form.addEventListener('submit', function(ev){
     div3.appendChild(document.createElement('br'))
     divbtn.appendChild(document.createElement('br'))
     divbtn.appendChild(btn)
-    divbtn.appendChild(btnS)
 
 
     divbtn.appendChild(document.createElement('hr'))
@@ -98,17 +100,20 @@ form.addEventListener('submit', function(ev){
 
     form.append(ul, titleExp, div ,div2, div3, divbtn)
 
-    form.addEventListener('button', function(){
-        const form = document.getElementById('orderForm')
-    
-        const ul = document.getElementsByTagName('ul')
-        const titleExp = document.getElementsByTagName('titleExp')
-        const div = document.getElementsByTagName('div')
-        const div2 = document.getElementsByTagName('div2')
-        const div3 = document.getElementsByTagName('div3')
-        const divbtn = document.getElementsByTagName('divbtn')
-        alert("Chegou no danger!")
-        form.remove()
-    })
+})
+
+const cad = document.getElementById('cad')
+cad.addEventListener('click', function (ev){
+    const name = document.getElementById('name').value
+    var tec = document.getElementById('inputtec').value
+
+    alert("O dev " + name + " Se cadastrou no sistema e tem conhecimento de "+tec)
+    var devs = []
+
+})
+
+const btnX = console.getElementById('btnX')
+btnX.addEventListener('click', function(){
+    alert("Clique")
 })
 
