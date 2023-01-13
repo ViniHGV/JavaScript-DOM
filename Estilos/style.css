@@ -11,9 +11,9 @@
 }
 .isLight{
     background-color: #fff;
-    color: black;
+    color: rgb(44, 44, 44);
 }
 .isDark{
-    background-color: black;
+    background-color: rgb(44, 44, 44);
     color: #fff;
 }
